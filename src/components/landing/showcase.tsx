@@ -20,7 +20,7 @@ export function Showcase() {
             See the Magic in Action
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Explore the bright colors, cartoon-style icons, and playful animations that make Kids Adventures a joy to use.
+            Explore the bright colors, cartoon-style icons, and playful animations that make KidsAI a joy to use.
           </p>
         </div>
         <div className="flex justify-center">

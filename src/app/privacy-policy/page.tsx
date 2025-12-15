@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
             
             <h2 className="font-headline">1. Giriş (Introduction)</h2>
             <p>
-              Bu gizlilik politikası, [Şirket/Geliştirici Adınız] tarafından geliştirilen 'KidsAI Adventures' mobil uygulaması için geçerlidir. KidsAI Adventures, 3 yaş ve üzeri çocukların çevrelerindeki nesneleri kamera ve yapay zeka yardımıyla öğrenmelerini sağlayan eğitici bir oyundur. Kullanıcılarımızın, özellikle de çocuklarımızın gizliliğine son derece önem veriyoruz. Bu politika, uygulamamızı kullanırken hangi verileri topladığımızı, bu verileri neden ve nasıl kullandığımızı ve bu verilerle ilgili haklarınızı şeffaf bir şekilde açıklamaktadır.
+              Bu gizlilik politikası, [Şirket/Geliştirici Adınız] tarafından geliştirilen 'KidsAI' mobil uygulaması için geçerlidir. KidsAI, 3 yaş ve üzeri çocukların çevrelerindeki nesneleri kamera ve yapay zeka yardımıyla öğrenmelerini sağlayan eğitici bir oyundur. Kullanıcılarımızın, özellikle de çocuklarımızın gizliliğine son derece önem veriyoruz. Bu politika, uygulamamızı kullanırken hangi verileri topladığımızı, bu verileri neden ve nasıl kullandığımızı ve bu verilerle ilgili haklarınızı şeffaf bir şekilde açıklamaktadır.
             </p>
 
             <h2 className="font-headline">2. Topladığımız Veriler (Data We Collect)</h2>

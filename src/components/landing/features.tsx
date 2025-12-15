@@ -19,7 +19,7 @@ export function Features() {
             A World of Fun & Learning
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            KidsAI Adventures is packed with features that make learning an exciting adventure.
+            KidsAI is packed with features that make learning an exciting adventure.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 justify-center">

@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex items-center gap-2">
           <Sparkles className="h-6 w-6 text-primary" />
           <p className="font-headline text-lg font-medium text-foreground">
-            Kids Adventures
+            KidsAI
           </p>
         </div>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">

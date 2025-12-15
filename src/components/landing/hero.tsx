@@ -17,7 +17,7 @@ export function Hero() {
             <span className="text-primary">Learning Adventure</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
-            Spark your child's curiosity with Kids Adventures! A magical world where learning to identify objects is a fun-filled game.
+            Spark your child's curiosity with KidsAI! A magical world where learning to identify objects is a fun-filled game.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg" asChild>

@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Kids Adventures',
+  title: 'KidsAI',
   description: 'The fun-filled learning adventure for kids!',
 };
 

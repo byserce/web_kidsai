@@ -1,4 +1,4 @@
-import type {Config} from 'tailwindcss';
+import type { Config } from 'tailwindcss';
 
 export default {
   darkMode: ['class'],
@@ -17,11 +17,30 @@ export default {
     },
     extend: {
       fontFamily: {
+        // Next.js font optimizasyonu ile uyumlu olması için variable'ı ekledim
+        luckiest: ['var(--font-luckiest-guy)', 'cursive'], 
         body: ['Luckiest Guy', 'cursive'],
         headline: ['Luckiest Guy', 'cursive'],
         code: ['monospace'],
       },
       colors: {
+        // --- KIDS AI ÖZEL RENK PALETİ (Flutter'dan birebir alındı) ---
+        kids: {
+          bg: "#E0F7FA",        // Ana Arkaplan (Açık Mavi)
+          primary: "#FFFF80AB", // Canlı Pembe (Klasik Mod)
+          primaryShadow: "#C51162",
+          secondary: "#BA68C8", // Mor (Smart Mod)
+          secondaryShadow: "#7B1FA2",
+          accent: "#4DD0E1",    // Turkuaz (Smart Eye)
+          accentShadow: "#0097A7",
+          success: "#AED581",   // Yeşil (Scavenger Hunt)
+          successShadow: "#689F38",
+          warning: "#FFA726",   // Turuncu (Envanter)
+          warningShadow: "#E65100",
+          yellow: "#FFF59D",    // Sarı (Ödül)
+          yellowDark: "#FBC02D",
+        },
+        // -----------------------------------------------------------
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -78,27 +97,39 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      // --- KIDS AI İÇİN ÖZEL GÖLGELER (3D Etkisi) ---
+      boxShadow: {
+        'kids-sm': '0 4px 0 0',
+        'kids-md': '0 6px 0 0',
+        'kids-lg': '0 8px 0 0',
+      },
+      // ----------------------------------------------
       keyframes: {
         'accordion-down': {
-          from: {
-            height: '0',
-          },
-          to: {
-            height: 'var(--radix-accordion-content-height)',
-          },
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
         },
         'accordion-up': {
-          from: {
-            height: 'var(--radix-accordion-content-height)',
-          },
-          to: {
-            height: '0',
-          },
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
+        // --- YENİ ANİMASYONLAR ---
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'spin-slow': {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        // --- YENİ ANİMASYON CLASS'LARI ---
+        'float': 'float 3s ease-in-out infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'spin-slow': 'spin-slow 8s linear infinite',
       },
     },
   },

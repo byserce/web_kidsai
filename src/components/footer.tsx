@@ -1,27 +1,67 @@
+"use client";
+
 import Link from "next/link";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Heart } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
 
 export function Footer() {
+  const { t } = useLanguage();
+
   return (
-    <footer className="bg-white/50 border-t border-border/50">
-      <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-6 md:flex-row">
-        <div className="flex items-center gap-2">
-          <Sparkles className="h-6 w-6 text-primary" />
-          <p className="font-headline text-lg font-medium text-foreground">
-            KidsAI
-          </p>
+    <footer className="bg-white border-t-[6px] border-kids-bg relative z-20 pb-6 pt-10">
+      <div className="container mx-auto px-4">
+        
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          
+          {/* --- SOL TARAFA: LOGO VE SLOGAN --- */}
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <div className="flex items-center gap-2 group cursor-default">
+              <div className="bg-kids-yellow/20 p-2 rounded-full group-hover:rotate-12 transition-transform">
+                <Sparkles className="h-6 w-6 text-kids-yellowDark fill-kids-yellow" />
+              </div>
+              <span className="font-luckiest text-2xl tracking-wide bg-gradient-to-br from-kids-primary via-orange-400 to-kids-secondary text-transparent bg-clip-text drop-shadow-sm">
+                KidsAI
+              </span>
+            </div>
+            <p className="font-luckiest text-slate-400 text-sm tracking-wide text-center md:text-left">
+              {t.footer.slogan}
+            </p>
+          </div>
+
+          {/* --- ORTA/SAĞ: LİNKLER --- */}
+          <nav className="flex flex-wrap justify-center gap-6 md:gap-8">
+            <Link 
+              href="/privacy-policy" 
+              className="font-luckiest text-slate-500 hover:text-kids-primary transition-colors text-lg tracking-wide hover:underline decoration-4 decoration-kids-primary/30 underline-offset-4"
+            >
+              {t.footer.privacy}
+            </Link>
+            <Link 
+              href="#" 
+              className="font-luckiest text-slate-500 hover:text-kids-accent transition-colors text-lg tracking-wide hover:underline decoration-4 decoration-kids-accent/30 underline-offset-4"
+            >
+              {t.footer.terms}
+            </Link>
+            <Link 
+              href="#" 
+              className="font-luckiest text-slate-500 hover:text-kids-secondary transition-colors text-lg tracking-wide hover:underline decoration-4 decoration-kids-secondary/30 underline-offset-4"
+            >
+              {t.footer.contact}
+            </Link>
+          </nav>
         </div>
-        <div className="flex items-center gap-4 text-sm text-muted-foreground">
-          <Link href="/privacy-policy" className="hover:text-foreground transition-colors">
-            Privacy Policy
-          </Link>
-          <Link href="#" className="hover:text-foreground transition-colors">
-            Terms of Service
-          </Link>
-          <Link href="#" className="hover:text-foreground transition-colors">
-            Contact
-          </Link>
+
+        {/* --- ALT KISIM: COPYRIGHT --- */}
+        <div className="mt-10 pt-6 border-t-2 border-slate-100 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-400 text-sm font-bold font-sans">
+          <p>© {new Date().getFullYear()} {t.footer.rights}</p>
+          
+          <div className="flex items-center gap-1 bg-slate-50 px-3 py-1 rounded-full">
+            <span>{t.footer.madeWith}</span>
+            <Heart className="w-4 h-4 text-red-400 fill-red-400 animate-pulse" />
+            <span>{t.footer.forKids}</span>
+          </div>
         </div>
+
       </div>
     </footer>
   );

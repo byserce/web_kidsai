@@ -75,6 +75,29 @@ export const translations = {
       english: "English",
       turkish: "Türkçe",
       comingSoon: "More Coming Soon...",
+    },
+    privacyPolicy: {
+      title: "Privacy Policy",
+      lastUpdated: "Last Updated: December 2023",
+      intro: "Welcome to KidsAI! We are committed to protecting the privacy of children and their families. This policy explains how we handle information.",
+      sections: [
+        {
+          title: "Information We Collect",
+          content: "We do not collect any personal information from children. The app uses the camera solely for object recognition locally on the device or via secure, anonymous cloud processing where no images are stored."
+        },
+        {
+          title: "How We Use Information",
+          content: "Any data processed is used strictly to provide the game experience (identifying objects). We do not sell or share data with third parties."
+        },
+        {
+          title: "Parental Control",
+          content: "We encourage parents to guide their children while using the app. Settings and external links are protected by a parental gate."
+        },
+        {
+          title: "Contact Us",
+          content: "If you have any questions, please contact us at support@kidsai.com."
+        }
+      ]
     }
   },
   tr: {
@@ -151,6 +174,29 @@ export const translations = {
       english: "İngilizce",
       turkish: "Türkçe",
       comingSoon: "Daha Fazlası Yakında...",
+    },
+    privacyPolicy: {
+      title: "Gizlilik Politikası",
+      lastUpdated: "Son Güncelleme: Aralık 2023",
+      intro: "KidsAI'ye hoş geldiniz! Çocukların ve ailelerinin gizliliğini korumaya kararlıyız. Bu politika, bilgileri nasıl ele aldığımızı açıklar.",
+      sections: [
+        {
+          title: "Topladığımız Bilgiler",
+          content: "Çocuklardan herhangi bir kişisel bilgi toplamıyoruz. Uygulama, kamerayı yalnızca cihaz üzerinde yerel olarak veya görüntülerin saklanmadığı güvenli, anonim bulut işleme yoluyla nesne tanıma için kullanır."
+        },
+        {
+          title: "Bilgileri Nasıl Kullanıyoruz",
+          content: "İşlenen veriler yalnızca oyun deneyimini (nesneleri tanımlama) sağlamak için kullanılır. Verileri üçüncü taraflarla satmayız veya paylaşmayız."
+        },
+        {
+          title: "Ebeveyn Kontrolü",
+          content: "Ebeveynleri, uygulamayı kullanırken çocuklarına rehberlik etmeye teşvik ediyoruz. Ayarlar ve dış bağlantılar bir ebeveyn kapısı ile korunmaktadır."
+        },
+        {
+          title: "İletişim",
+          content: "Herhangi bir sorunuz varsa, lütfen support@kidsai.com adresinden bizimle iletişime geçin."
+        }
+      ]
     }
   },
 };

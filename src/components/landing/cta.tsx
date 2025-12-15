@@ -35,6 +35,9 @@ export function Cta() {
             <Star className="w-5 h-5" />
         </div>
         <p className="text-sm text-muted-foreground mt-2">Loved by kids and parents everywhere</p>
+        <div className="mt-8 text-sm text-muted-foreground">
+          <p>We care about your privacy. Read our <Link href="/privacy-policy" className="underline hover:text-foreground">Privacy Policy</Link>.</p>
+        </div>
       </div>
     </section>
   );

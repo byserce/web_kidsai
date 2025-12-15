@@ -1,25 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Camera, Map, Wand2, PawPrint } from "lucide-react";
+import { PawPrint } from "lucide-react";
 
 const features = [
-  {
-    icon: Camera,
-    title: "AI Object Recognition",
-    description: "Our smart camera identifies everyday objects, turning learning into a magical experience for your child.",
-    color: "bg-chart-1",
-  },
-  {
-    icon: Map,
-    title: "Scavenger Hunts",
-    description: "Engaging, AI-generated scavenger hunts that adapt to your home environment, making every game unique.",
-    color: "bg-chart-3",
-  },
-  {
-    icon: Wand2,
-    title: "Smart Mode Assistance",
-    description: "A helpful AI guide provides gentle hints and fun facts, encouraging learning without giving away the answer.",
-    color: "bg-chart-2",
-  },
   {
     icon: PawPrint,
     title: "Progression System",
@@ -40,7 +22,7 @@ export function Features() {
             KidsAI Adventures is packed with features that make learning an exciting adventure.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 justify-center">
           {features.map((feature) => (
             <Card key={feature.title} className="text-center shadow-lg border-2 hover:border-primary/50 transition-all hover:scale-105">
               <CardHeader>

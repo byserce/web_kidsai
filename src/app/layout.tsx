@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'KidsAI Adventures',
-  description: 'The fun-filled AI learning adventure for kids!',
+  title: 'Kids Adventures',
+  description: 'The fun-filled learning adventure for kids!',
 };
 
 export default function RootLayout({

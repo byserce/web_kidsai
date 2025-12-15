@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { AppStoreIcon, GooglePlayIcon } from "@/components/icons";
+import { GooglePlayIcon } from "@/components/icons";
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {
@@ -13,11 +13,11 @@ export function Hero() {
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="text-center lg:text-left">
           <h1 className="font-headline text-5xl md:text-7xl font-bold text-foreground leading-tight">
-            The Ultimate AI <br />
+            The Ultimate <br />
             <span className="text-primary">Learning Adventure</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
-            Spark your child's curiosity with KidsAI Adventures! A magical world where learning to identify objects is a fun-filled game powered by AI.
+            Spark your child's curiosity with Kids Adventures! A magical world where learning to identify objects is a fun-filled game.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg" asChild>

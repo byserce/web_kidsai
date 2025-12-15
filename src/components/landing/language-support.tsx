@@ -8,7 +8,7 @@ export function LanguageSupport() {
           Play in Your Language
         </h2>
         <p className="mt-4 max-w-xl mx-auto text-lg text-muted-foreground">
-          KidsAI Adventures is designed for families around the world.
+          Kids Adventures is designed for families around the world.
         </p>
         <div className="mt-8 flex justify-center items-center gap-6">
           <Badge className="text-lg px-6 py-2 bg-secondary text-secondary-foreground border-2 border-border shadow-sm">

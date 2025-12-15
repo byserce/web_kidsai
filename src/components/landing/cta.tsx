@@ -11,7 +11,7 @@ export function Cta() {
           Ready for an Adventure?
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-          Unlock a world of learning and fun for your child. Download KidsAI Adventures today and start the journey!
+          Unlock a world of learning and fun for your child. Download Kids Adventures today and start the journey!
         </p>
         <div className="mt-8 flex justify-center items-center gap-4">
           <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg" asChild>

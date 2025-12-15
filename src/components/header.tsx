@@ -10,7 +10,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Sparkles className="h-7 w-7 text-primary" />
           <span className="font-headline text-2xl font-bold text-foreground">
-            KidsAI Adventures
+            Kids Adventures
           </span>
         </Link>
         <div className="hidden items-center gap-2 md:flex">

@@ -26,6 +26,9 @@ export function Footer() {
             <p className="font-luckiest text-slate-400 text-sm tracking-wide text-center md:text-left">
               {t.footer.slogan}
             </p>
+            <a href="mailto:game.kidsai.app@gmail.com" className="font-luckiest text-slate-400/80 text-sm tracking-wide hover:text-kids-primary transition-colors mt-1 block">
+              game.kidsai.app@gmail.com
+            </a>
           </div>
 
           {/* --- ORTA/SAĞ: LİNKLER --- */}
@@ -43,7 +46,7 @@ export function Footer() {
               {t.footer.terms}
             </Link>
             <Link 
-              href="#" 
+              href="mailto:game.kidsai.app@gmail.com" 
               className="font-luckiest text-slate-500 hover:text-kids-secondary transition-colors text-lg tracking-wide hover:underline decoration-4 decoration-kids-secondary/30 underline-offset-4"
             >
               {t.footer.contact}

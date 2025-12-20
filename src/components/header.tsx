@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Sparkles, Apple, Play } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 
-const languages = [
+export const languages = [
   { code: "en", flag: "🇺🇸", label: "English" },
   { code: "tr", flag: "🇹🇷", label: "Türkçe" },
   { code: "de", flag: "🇩🇪", label: "Deutsch" },

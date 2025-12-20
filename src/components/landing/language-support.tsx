@@ -2,6 +2,7 @@
 
 import { Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
+import { languages } from "@/components/header";
 
 export function LanguageSupport() {
   const { t, setLanguage, language } = useLanguage();
@@ -30,34 +31,18 @@ export function LanguageSupport() {
         </div>
 
         {/* --- DİL KARTLARI --- */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
           
-          {/* ENGLISH CARD */}
-          <div 
-            onClick={() => setLanguage("en")}
-            className={`group relative w-full sm:w-auto min-w-[200px] bg-white border-[5px] ${language === 'en' ? 'border-blue-500 shadow-xl' : 'border-blue-200'} rounded-[30px] p-4 shadow-kids-md shadow-blue-200/50 hover:-translate-y-1 hover:shadow-xl hover:border-blue-400 transition-all duration-300 cursor-pointer`}
-          >
-            <div className="flex items-center justify-center gap-4">
-              <span className="text-4xl filter drop-shadow-sm group-hover:scale-110 transition-transform">🇺🇸</span>
-              <span className="font-luckiest text-2xl text-blue-500 tracking-wide">{t.languageSupport.english}</span>
+          {languages.map((lang) => (
+            <div 
+              key={lang.code}
+              onClick={() => setLanguage(lang.code as any)}
+              className={`group relative w-full sm:w-auto min-w-[160px] bg-white border-[4px] ${language === lang.code ? 'border-kids-primary shadow-xl scale-105' : 'border-slate-200'} rounded-[24px] p-4 shadow-kids-sm hover:-translate-y-1 hover:shadow-lg hover:border-kids-primary/50 transition-all duration-300 cursor-pointer flex flex-col items-center gap-2`}
+            >
+              <span className="text-4xl filter drop-shadow-sm group-hover:scale-110 transition-transform">{lang.flag}</span>
+              <span className={`font-luckiest text-xl tracking-wide ${language === lang.code ? 'text-kids-primary' : 'text-slate-400 group-hover:text-slate-600'}`}>{lang.label}</span>
             </div>
-          </div>
-
-          {/* TURKISH CARD */}
-          <div 
-            onClick={() => setLanguage("tr")}
-            className={`group relative w-full sm:w-auto min-w-[200px] bg-white border-[5px] ${language === 'tr' ? 'border-red-500 shadow-xl' : 'border-red-200'} rounded-[30px] p-4 shadow-kids-md shadow-red-200/50 hover:-translate-y-1 hover:shadow-xl hover:border-red-400 transition-all duration-300 cursor-pointer`}
-          >
-            <div className="flex items-center justify-center gap-4">
-              <span className="text-4xl filter drop-shadow-sm group-hover:scale-110 transition-transform">🇹🇷</span>
-              <span className="font-luckiest text-2xl text-red-500 tracking-wide">{t.languageSupport.turkish}</span>
-            </div>
-          </div>
-
-          {/* MORE COMING SOON BADGE */}
-          <div className="hidden md:flex items-center justify-center px-6 py-4 bg-slate-100 border-[3px] border-slate-200 rounded-[30px] border-dashed">
-            <span className="font-luckiest text-slate-400 text-lg">{t.languageSupport.comingSoon}</span>
-          </div>
+          ))}
 
         </div>
       </div>

@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
               {t.privacyPolicy.sections.map((section, index) => (
                 <div key={index} className="bg-slate-50 p-6 rounded-3xl border-2 border-slate-100">
                   <h3 className="font-luckiest text-2xl text-kids-secondary mb-3">{section.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{section.content}</p>
+                  <p className="text-slate-600 leading-relaxed whitespace-pre-wrap">{section.content}</p>
                 </div>
               ))}
             </div>

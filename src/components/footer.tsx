@@ -16,8 +16,8 @@ export function Footer() {
           {/* --- SOL TARAFA: LOGO VE SLOGAN --- */}
           <div className="flex flex-col items-center md:items-start gap-2">
             <div className="flex items-center gap-2 group cursor-default">
-              <div className="bg-kids-yellow/20 p-2 rounded-full group-hover:rotate-12 transition-transform">
-                <Sparkles className="h-6 w-6 text-kids-yellowDark fill-kids-yellow" />
+              <div className="bg-orange-100 p-2 rounded-full group-hover:rotate-12 transition-transform">
+                <Sparkles className="h-6 w-6 text-orange-600 fill-orange-400" />
               </div>
               <span className="font-luckiest text-2xl tracking-wide bg-gradient-to-br from-kids-primary via-orange-400 to-kids-secondary text-transparent bg-clip-text drop-shadow-sm">
                 KidsAI

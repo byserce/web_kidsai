@@ -75,6 +75,20 @@ export const translations = {
       english: "English",
       turkish: "Türkçe",
       comingSoon: "More Coming Soon...",
+    },
+    beta: {
+      badge: "Join the Beta",
+      title: "Be the first to try AI-powered educational games for your child!",
+      description: "Join our exclusive community of parents. Get early access to KidsAI and help us shape the future of learning.",
+      cta: "Join Test Group to Try for Free",
+      steps: {
+        step1: "Join Google Group",
+        step1Desc: "First, join our Google Group to qualify for the beta program.",
+        step2: "Download App",
+        step2Desc: "Once joined, download the app directly from the Play Store.",
+      },
+      googleGroupLink: "https://groups.google.com/g/kidsai-beta",
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.kidsai.app",
     }
   },
   tr: {
@@ -151,6 +165,20 @@ export const translations = {
       english: "İngilizce",
       turkish: "Türkçe",
       comingSoon: "Daha Fazlası Yakında...",
+    },
+    beta: {
+      badge: "Beta'ya Katılın",
+      title: "Çocuğunuz için AI destekli eğitici oyunları ilk deneyen siz olun!",
+      description: "Özel ebeveyn topluluğumuza katılın. KidsAI'ye erken erişim sağlayın ve öğrenmenin geleceğini şekillendirmemize yardımcı olun.",
+      cta: "Ücretsiz Denemek İçin Test Grubuna Katılın",
+      steps: {
+        step1: "Google Grubuna Katıl",
+        step1Desc: "İlk olarak, beta programına hak kazanmak için Google Grubumuza katılın.",
+        step2: "Uygulamayı İndir",
+        step2Desc: "Katıldıktan sonra uygulamayı doğrudan Play Store'dan indirin.",
+      },
+      googleGroupLink: "https://groups.google.com/g/kidsai-beta",
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.kidsai.app",
     }
   },
 };

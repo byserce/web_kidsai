@@ -31,7 +31,7 @@ export function Cta() {
           
           {/* iOS Button (Sarı - Güncellenmiş Stil) */}
           <Link 
-            href="#" 
+            href="/beta" 
             className="group relative w-full sm:w-auto min-w-[240px] h-[64px] bg-kids-warning border-4 border-white rounded-full shadow-kids-md shadow-kids-warningShadow hover:translate-y-1 hover:shadow-none transition-all duration-200 flex items-center justify-center gap-3 active:scale-95"
           >
             <div className="bg-white/20 p-1.5 rounded-full">
@@ -42,7 +42,7 @@ export function Cta() {
 
           {/* Android Button (Turkuaz - Smart Eye Rengi) */}
           <Link 
-            href="#" 
+            href="/beta" 
             className="group relative w-full sm:w-auto min-w-[240px] h-[64px] bg-kids-accent border-4 border-white rounded-full shadow-kids-md shadow-kids-accentShadow hover:translate-y-1 hover:shadow-none transition-all duration-200 flex items-center justify-center gap-3 active:scale-95"
           >
             <div className="bg-white/20 p-1.5 rounded-full">

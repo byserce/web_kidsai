@@ -18,14 +18,12 @@ export function Showcase() {
   // Kendi ekran görüntülerinizi eklemek için bu listeyi düzenleyin.
   // Resimleri 'public' klasörüne atıp yollarını (örn: /screen1.png) buraya yazın.
   const showcaseImages = [
-    { id: "1", imageUrl: "/screen1.png", description: "Oyun Ekranı 1", imageHint: "screenshot" },
-    { id: "2", imageUrl: "/screen2.png", description: "Oyun Ekranı 2", imageHint: "screenshot" },
-    { id: "3", imageUrl: "/screen3.png", description: "Oyun Ekranı 3", imageHint: "screenshot" },
-    { id: "4", imageUrl: "/screen4.png", description: "Oyun Ekranı 4", imageHint: "screenshot" },
-    { id: "5", imageUrl: "/screen5.png", description: "Oyun Ekranı 5", imageHint: "screenshot" },
-    { id: "6", imageUrl: "/screen6.png", description: "Oyun Ekranı 6", imageHint: "screenshot" },
-    { id: "7", imageUrl: "/screen7.png", description: "Oyun Ekranı 7", imageHint: "screenshot" },
-    { id: "8", imageUrl: "/screen8.png", description: "Oyun Ekranı 8", imageHint: "screenshot" },
+    { id: "1", imageUrl: "/eng_screenshot/WhatsApp Image 2026-03-02 at 14.27.01.jpeg", description: "Game Screen 1", imageHint: "screenshot" },
+    { id: "2", imageUrl: "/eng_screenshot/WhatsApp Image 2026-03-02 at 14.27.01 (1).jpeg", description: "Game Screen 2", imageHint: "screenshot" },
+    { id: "3", imageUrl: "/eng_screenshot/WhatsApp Image 2026-03-02 at 14.27.01 (2).jpeg", description: "Game Screen 3", imageHint: "screenshot" },
+    { id: "4", imageUrl: "/eng_screenshot/WhatsApp Image 2026-03-02 at 14.27.01 (3).jpeg", description: "Game Screen 4", imageHint: "screenshot" },
+    { id: "5", imageUrl: "/eng_screenshot/WhatsApp Image 2026-03-02 at 14.27.01 (4).jpeg", description: "Game Screen 5", imageHint: "screenshot" },
+    { id: "6", imageUrl: "/eng_screenshot/WhatsApp Image 2026-03-02 at 14.27.02.jpeg", description: "Game Screen 6", imageHint: "screenshot" },
   ];
 
   return (

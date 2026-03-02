@@ -40,7 +40,7 @@ export function Footer() {
               {t.footer.privacy}
             </Link>
             <Link 
-              href="#" 
+              href="/beta" 
               className="font-luckiest text-slate-500 hover:text-kids-accent transition-colors text-lg tracking-wide hover:underline decoration-4 decoration-kids-accent/30 underline-offset-4"
             >
               {t.footer.terms}

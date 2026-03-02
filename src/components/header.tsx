@@ -42,7 +42,7 @@ export function Header() {
           
           {/* App Store Mini Button */}
           <Link 
-            href="#" 
+            href="/beta" 
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500 border-2 border-orange-500 text-white font-luckiest text-sm tracking-wide hover:bg-orange-600 hover:border-orange-600 hover:text-white transition-all duration-200 shadow-sm hover:shadow-kids-sm hover:shadow-orange-200 active:translate-y-0.5 active:shadow-none"
           >
             <Apple className="h-4 w-4 mb-0.5" fill="currentColor" />
@@ -51,7 +51,7 @@ export function Header() {
 
           {/* Google Play Mini Button */}
           <Link 
-            href="#" 
+            href="/beta" 
             className="flex items-center gap-2 px-4 py-2 rounded-full border-2 border-kids-accent text-kids-accent font-luckiest text-sm tracking-wide hover:bg-kids-accent hover:text-white transition-all duration-200 shadow-sm hover:shadow-kids-sm hover:shadow-kids-accentShadow active:translate-y-0.5 active:shadow-none"
           >
             <Play className="h-4 w-4 mb-0.5" fill="currentColor" />
@@ -127,7 +127,7 @@ export function Header() {
             </div>
 
             {/* Basit bir mobil indirme butonu */}
-            <Link href="#" className="bg-orange-500 text-white p-2 rounded-full shadow-kids-sm shadow-orange-200 active:shadow-none active:translate-y-1 block">
+            <Link href="/beta" className="bg-orange-500 text-white p-2 rounded-full shadow-kids-sm shadow-orange-200 active:shadow-none active:translate-y-1 block">
                 <Apple className="h-5 w-5" fill="currentColor" />
             </Link>
         </div>
